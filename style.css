@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --text-color: hsl(215, 51%, 70%);
+    --line-color: hsl(215, 32%, 27%);
+    --hover-color: hsl(178, 100%, 50%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: "Outfit";
+    font-size: 18px;
+    background-color: var(--main-bg);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.card__container{
+    width: 327px;
+    box-sizing: border-box;
+    background-color: var(--card-bg);
+    padding: 24px;
+    border-radius: 15px;
+}
+
+.nft__thumbnail{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.nft__title{
+    color: var(--white);
+    font-size: 1.12em;
+}
+
+.nft__desc{
+    color: var(--text-color);
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row span{
+    vertical-align: top;
+    padding-left: 3px;
+    font-size: 0.85em;
+}
+
+.nft__price{
+    color: var(--hover-color);
+    font-weight: 400;
+}
+
+.nft__time{
+    color: var(--text-color);
+}
+
+hr{
+    border: none;
+    border-top: 1px solid var(--line-color);
+    margin: 20px 0;
+}
+
+.nft__creator{
+    display: flex;
+    align-items: center;
+}
+
+.nft__creator p{
+    margin: 0;
+    color: var(--text-color);
+    font-size: 0.85em;
+}
+
+.avatar{
+    max-width: 10%;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.nft__creatorname{
+    color: var(--white);
+}
+
+
+
+
+
+
