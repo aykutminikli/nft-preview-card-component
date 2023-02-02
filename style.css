@@ -29,8 +29,22 @@ body{
 }
 
 .nft__thumbnail{
-    max-width: 100%;
+    position: relative;
+    background-color: var(--hover-color);
+    overflow: hidden;
     border-radius: 10px;
+}
+
+.nft__thumbnailimg{
+    max-width: 100%;
+    display: block;
+}
+
+.nft__view{
+    position: absolute;
+    top: 41%;
+    left: 41%;
+    visibility: hidden;
 }
 
 .nft__title{
@@ -42,6 +56,7 @@ body{
     color: var(--text-color);
     font-weight: 300;
     font-size: 0.9em;
+    line-height: 1.5em;
 }
 
 .row{
@@ -90,6 +105,19 @@ hr{
 
 .nft__creatorname{
     color: var(--white);
+}
+
+.nft__title:hover, .nft__creatorname:hover, .nft__thumbnail:hover{
+    color: var(--hover-color);
+    cursor: pointer;
+}
+
+.nft__thumbnail:hover img{
+    opacity: 0.5;
+}
+
+.nft__thumbnail:hover .nft__view{
+    visibility: visible;
 }
 
 
